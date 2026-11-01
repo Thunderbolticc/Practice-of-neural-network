@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-11-01T21:10:44",
+  "python": "3.13.16",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu_count": 16,
+  "settings": {
+    "files": 150,
+    "image_size": 128,
+    "workers": 4,
+    "processes": 4,
+    "copies": 4,
+    "seed": 42
+  },
+  "sequential": {
+    "mode": "sequential",
+    "files": 150,
+    "images": 750,
+    "seconds": 0.7054,
+    "per_file_ms": 4.7
+  },
+  "parallel": {
+    "mode": "parallel",
+    "files": 150,
+    "images": 750,
+    "seconds": 0.4754,
+    "per_file_ms": 3.17,
+    "startup_seconds": 0.598,
+    "total_seconds": 1.0734
+  },
+  "speedup": 1.48,
+  "note": "Аугментация - операция CPU-bound: потоки в CPython ограничены GIL, поэтому она выполняется в пуле процессов. Время параллельной версии замерено после прогрева пула; запуск процессов на Windows показан отдельно в startup_seconds."
+}
