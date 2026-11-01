@@ -1,0 +1,10 @@
+# Зависимости проекта
+# Установка: python -m pip install -r requirements.txt
+
+numpy>=2.0
+matplotlib>=3.8
+Pillow>=10.0
+python-dotenv>=1.0
+
+# Проверка стиля кода (не нужна для запуска программ)
+flake8>=7.0
